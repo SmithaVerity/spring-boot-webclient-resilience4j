@@ -27,17 +27,17 @@ spring:
   datasource:
     name: customer-service
     ### In memory H2 connection string
-    #jdbc-url: jdbc:h2:mem:customerservice;Mode=postgreSQL
-    #username: sa
+    jdbc-url: jdbc:h2:mem:customerservice;Mode=postgreSQL
+    username: sa
     # It needs to be empty for h2 (enter sa into h2-console)
-    #password: # It needs to be empty for h2
-    #type: # It needs to be empty for h2
-    #driver-class-name: org.h2.Driver #it has to be populated to avoid "Failed to load driver in either of HikariConfig class loader or Thread context classloader" error
+    password: # It needs to be empty for h2
+    type: # It needs to be empty for h2
+    driver-class-name: org.h2.Driver #it has to be populated to avoid "Failed to load driver in either of HikariConfig class loader or Thread context classloader" error
     ### PostgreSQL
-    jdbc-url: jdbc:postgresql://localhost:5432/customerservice
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
+    #jdbc-url: jdbc:postgresql://localhost:5432/customerservice
+    #username: postgres
+    #password: postgres
+    #driver-class-name: org.postgresql.Driver
     tlsEnabled: true
     minimum-idle: 10 # The minimum number of established connections that should be kept in the pool at all times.
     maximum-pool-size: 50 # The maximum number of connections that should be kept in the pool at all times.
