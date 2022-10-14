@@ -10,7 +10,7 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 10
       slidingWindowType: TIME_BASED
       slidingWindowSize: 10
-      waitDurationInOpenState: 50s
+      waitDurationInOpenState: 120s
       permittedNumberOfCallsInHalfOpenState: 3
 
 # Spring
